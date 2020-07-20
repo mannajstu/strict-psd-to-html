@@ -4,34 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <title>PSD Strict to HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="fonts/css/all.min.css">
+
+
     <!-- Default Style Sheet -->
-    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
     <!-- Main Style Sheet -->
+   
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!--Header Section start-->
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <!-- header Logo Start -->
-                <div class="logo">
-                    <a href="#"><img src="img/Strict.png" alt=" Logo"></a>
-                </div>
+
                 <!-- header Logo end -->
                 <!-- header Navigation section start -->
-                <nav>
-                    <ul class="row">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">project</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg navbar-light col-12 ">
+                    <div class="logo pt-4 pb-4 col-2">
+                        <a href="#"><img src="img/Strict.png" alt=" Logo"></a>
+                    </div>
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse col-10 ml-auto" id="navbarTogglerDemo01">
+
+                        <ul class="navbar-nav  mt-2 ml-auto mt-lg-0">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Home </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">About </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Gallery </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Contact </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
                 </nav>
-                <!-- header Navigation section end -->
+
             </div>
         </div>
     </header>
@@ -41,23 +65,24 @@
     <!--Banner Section start-->
     <section class="hero_section">
         <div class="container">
-            <div class="row ">
-                <div class="hero_content">
+            <div class="row justify-content-center align-content-center vh-100">
+                <div class="hero_content text-center ">
                     <h2>strict</h2>
                     <span></span>
                     <p>STRICT is a responsive theme with a a clean and minimal look.</p>
-                    <button type="button">Call to action</button>
+                    <a href="#" class='button'>Call to action</a>
                 </div>
             </div>
         </div>
-        <a href="#" class="down_arrow"><i class="fas fa-chevron-down"></i></a>
+
+        <a href="#" class="down_arrow "><i class="fas fa-chevron-down animated infinite slideInDown "></i></a>
     </section>
     <!--Banner Section End-->
 
     <!--About Section start-->
     <section class="about_section">
         <div class="container">
-            <div class="heading">
+            <div class="heading text-center">
                 <h2>Simple & pure design.</h2>
                 <p>Designers everywhere gush with admiration upon seeing a web design and exclaim "its beautiful, it's
                     so clean!". There are a countless number of webdesign round-ups dedicated to 'clean' design and it
@@ -73,34 +98,42 @@
         <div class="container">
             <div class="row">
                 <!--feature Box-->
-                <div class="feature_box">
-                    <div class="icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
+                <div class="col-md-4 ">
 
-                    <h3>Optimized for all devices</h3>
-                    <p>STRICT has been designed to be fully
-                        responsive on all devices</p>
+
+                    <div class="feature_box">
+                        <div class="icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+
+                        <h3>Optimized for all devices</h3>
+                        <p>STRICT has been designed to be fully
+                            responsive on all devices</p>
+                    </div>
                 </div>
                 <!--feature Box-->
                 <!--feature Box-->
-                <div class="feature_box">
-                    <div class="icon">
-                        <i class="fas fa-paper-plane"></i>
+                <div class="col-md-4">
+                    <div class="feature_box">
+                        <div class="icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <h3>Clean & Minimal Design</h3>
+                        <p>This multipurpose theme is especially created
+                            to be used for different projects.</p>
                     </div>
-                    <h3>Clean & Minimal Design</h3>
-                    <p>This multipurpose theme is especially created
-                        to be used for different projects.</p>
                 </div>
                 <!--feature Box-->
                 <!--feature Box-->
-                <div class="feature_box">
-                    <div class="icon">
-                        <i class="fas fa-bullhorn"></i>
+                <div class="col-md-4">
+                    <div class="feature_box">
+                        <div class="icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Font Awesome Icon</h3>
+                        <p>This multipurpose theme is especially created
+                            to be used for different projects.</p>
                     </div>
-                    <h3>Font Awesome Icon</h3>
-                    <p>This multipurpose theme is especially created
-                        to be used for different projects.</p>
                 </div>
                 <!--feature Box-->
             </div>
@@ -111,68 +144,83 @@
     <!--Showcase Section start -->
     <section class="showcase_section">
         <div class="container">
-            <div class="heading">
+
+            <div class="heading text-center">
                 <h2>Showcase your work like a pro.</h2>
                 <p> Contact me if you like my work</p>
+
             </div>
-            <div class="row">
+            <div class="row mb-5">
                 <!-- showcase -->
-                <div class="showcase">
+                <div class="col-md-4 p-2">
+
+
                     <div class="showcase_detail">
-                        <img src="img/project1.png" alt="showcase one">
+                        <img src="img/project1.png" class="w-100" alt="showcase one">
                         <div class="overlay"></div>
                         <a href="#" class="plus"><i class="fas fa-search-plus"></i></a>
                         <a href="#" class="link"><i class="fas fa-link"></i></a>
+
                     </div>
                 </div>
                 <!-- showcase -->
                 <!-- showcase -->
-                <div class="showcase">
+                <div class="col-md-4 p-2">
+
                     <div class="showcase_detail">
-                        <img src="img/project2.png" alt="showcase one">
+                        <img src="img/project2.png" class="w-100" alt="showcase one">
                         <div class="overlay"></div>
                         <a href="#" class="plus"><i class="fas fa-search-plus"></i></a>
                         <a href="#" class="link"><i class="fas fa-link"></i></a>
+
                     </div>
                 </div>
                 <!-- showcase -->
                 <!-- showcase -->
-                <div class="showcase">
+                <div class="col-md-4 p-2">
+
                     <div class="showcase_detail">
-                        <img src="img/project3.png" alt="showcase one">
+                        <img src="img/project3.png" class="w-100" alt="showcase one">
                         <div class="overlay"></div>
                         <a href="#" class="plus"><i class="fas fa-search-plus"></i></a>
                         <a href="#" class="link"><i class="fas fa-link"></i></a>
+
                     </div>
                 </div>
                 <!-- showcase -->
                 <!-- showcase -->
-                <div class="showcase">
+                <div class="col-md-4 p-2">
+
                     <div class="showcase_detail">
-                        <img src="img/project4.png" alt="showcase one">
+                        <img src="img/project4.png" class="w-100" alt="showcase one">
                         <div class="overlay"></div>
                         <a href="#" class="plus"><i class="fas fa-search-plus"></i></a>
                         <a href="#" class="link"><i class="fas fa-link"></i></a>
+
                     </div>
                 </div>
                 <!-- showcase -->
                 <!-- showcase -->
-                <div class="showcase">
+                <div class="col-md-4 p-2">
+
                     <div class="showcase_detail">
-                        <img src="img/project5.png" alt="showcase one">
+                        <img src="img/project5.png" class="w-100" alt="showcase one">
                         <div class="overlay"></div>
                         <a href="#" class="plus"><i class="fas fa-search-plus"></i></a>
                         <a href="#" class="link"><i class="fas fa-link"></i></a>
+
                     </div>
                 </div>
                 <!-- showcase -->
                 <!-- showcase -->
-                <div class="showcase">
+                <div class="col-md-4 p-2">
+
                     <div class="showcase_detail">
-                        <img src="img/project6.png" alt="showcase one">
+                        <img src="img/project6.png" class="w-100" alt="showcase one">
                         <div class="overlay"></div>
                         <a href="#" class="plus"><i class="fas fa-search-plus"></i></a>
                         <a href="#" class="link"><i class="fas fa-link"></i></a>
+
                     </div>
                 </div>
                 <!-- showcase -->
@@ -187,23 +235,40 @@
     <section class="contact_section">
         <div class="contact_overlay"></div>
         <div class="container">
-            <div class="heading">
+
+            <div class="heading text-center">
                 <h2>Stay with us</h2>
                 <p>We ensure quality & support</p>
             </div>
             <!-- Form section start -->
             <div class="row">
-                <div class="contact_form">
-                    <form action="#">
-                        <input type="text" placeholder="Full Name">
-                        <input type="email" placeholder="Email Address">
-                        <textarea name="" placeholder="Messege" id="" cols="30" rows="10"></textarea>
-                        <ul class="row">
-                            <li><input type="checkbox" id="newslatter"><label for="newslatter">Subscribe
-                                    Newslatter</label></li>
-                            <li><input type="submit" value="Send"></li>
-                        </ul>
-                    </form>
+
+                <div class="col-md-6 m-auto pb-5">
+                    <div class="contact_form ">
+
+
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" class="form-control" placeholder="Messege" id="" cols="30"
+                                    rows="10"></textarea>
+                            </div>
+                            <div class="d-flex">
+                                <input id="my-input" class="form-check-input align-self-center" type="checkbox" name=""
+                                    value="true">
+                                <div class="align-self-center text-white ml-4" for="my-input">Subscribe
+                                    Newsletter</div>
+                                <input type="submit" class="btn btn-primary align-self-center ml-auto button" value="Send">
+                            </div>
+
+
+                        </form>
+                    </div>
                 </div>
             </div>
             <!-- Form section end -->
@@ -217,20 +282,16 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="copyright">
-                    <p>Copyright 2019 <a href="#" target="_blank">SK Waluer Rahman Manna</a>
+                <div class="col-md-6 text-md-left text-center ">
+                    <p>Copyright <script>document.write(new Date().getFullYear())</script> <a href="#" target="_blank">SK Waluer Rahman Manna</a>
                     </p>
                 </div>
-                <div class="social">
-                    <ul class="row">
-                        <li><a href="#" target="_blank"><i
-                                    class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#" target="_blank"><i
-                                    class="fab fa-twitter"></i></a></li>
-                        <li><a href="#" target="_blank"><i
-                                    class="fab fa-google-plus-g"></i></a></li>
-                        <li><a href="#" target="_blank"><i
-                                    class="fab fa-linkedin-in"></i></a></li>
+                <div class="col-md-6 social">
+                    <ul class="list-inline text-md-right text-center ">
+                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                     </ul>
                 </div>
 
@@ -238,7 +299,9 @@
         </div>
     </footer>
     <!--Footer Section end-->
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
