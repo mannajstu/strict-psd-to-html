@@ -35,11 +35,19 @@ a:hover {
 	color: #15a4fa;
 }
 
+
 .hero_section {
+
 	background: url(../img/hero-background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center center;
 	position: relative;
+
+}
+
+.hero_section .row {
+	height: 80vh !important;
 }
 
 .hero_content h2 {
@@ -52,7 +60,8 @@ a:hover {
 	background-color: #15a4fa;
 	height: 2px;
 	display: block;
-	width: 100%;
+	width: 50%;
+	margin: 0 auto;
 }
 
 .hero_content p {
